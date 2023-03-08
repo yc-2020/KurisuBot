@@ -1,0 +1,24 @@
+qq-bot:
+  server:
+    url: "http://192.168.50.183:5700"
+    qq: 2198336792
+http:
+  proxy:
+    url: "127.0.0.1"
+    port: 10808
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/kurisu/kurisudb
+    username: sa
+    password: sa
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true #开启web console功能
+      path: /h2

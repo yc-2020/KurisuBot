@@ -1,4 +1,4 @@
-package xyz.yuchao.kurisubot.service;
+package xyz.yuchao.kurisubot.service.api;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;

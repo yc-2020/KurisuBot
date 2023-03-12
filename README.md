@@ -1,0 +1,1 @@
+词点支持：https://github.com/skywind3000/ecdict

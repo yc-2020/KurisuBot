@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Reference
 @Component
-@ConfigurationProperties(prefix = "qq-bot.server")
+@ConfigurationProperties(prefix = "kuris-bot.server")
 public class KurisuBotConfig {
     private String url;
 

@@ -1,15 +1,13 @@
-package xyz.yuchao.kurisubot.service.impl;
+package xyz.yuchao.kurisubot.service.api.impl;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import org.springframework.web.client.RestTemplate;
 import xyz.yuchao.kurisubot.config.KurisuBotConfig;
 import xyz.yuchao.kurisubot.constants.UrlConstant;
-import xyz.yuchao.kurisubot.service.ApiService;
+import xyz.yuchao.kurisubot.service.api.ApiService;
 import xyz.yuchao.kurisubot.service.BaseAbstractService;
 
 import javax.annotation.Resource;

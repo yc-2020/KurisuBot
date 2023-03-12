@@ -1,4 +1,4 @@
-qq-bot:
+kuris-bot:
   server:
     url: "http://192.168.50.183:5700"
     qq: 2198336792
@@ -8,17 +8,13 @@ http:
     port: 10808
 spring:
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:~/kurisu/kurisudb
-    username: sa
-    password: sa
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.50.183:3306/Kurisu?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 12345678
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.H2Dialect
     defer-datasource-initialization: true
-  h2:
-    console:
-      enabled: true #开启web console功能
-      path: /h2

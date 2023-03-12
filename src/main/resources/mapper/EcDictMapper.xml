@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xyz.yuchao.kurisubot.mapper.dict.EcDictMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="xyz.yuchao.kurisubot.entity.dict.EcDict">
+        <id column="word" property="word" />
+        <result column="phonetic" property="phonetic" />
+        <result column="definition" property="definition" />
+        <result column="translation" property="translation" />
+        <result column="pos" property="pos" />
+        <result column="collins" property="collins" />
+        <result column="oxford" property="oxford" />
+        <result column="tag" property="tag" />
+        <result column="bnc" property="bnc" />
+        <result column="frq" property="frq" />
+        <result column="exchange" property="exchange" />
+        <result column="detail" property="detail" />
+        <result column="audio" property="audio" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        word, phonetic, definition, translation, pos, collins, oxford, tag, bnc, frq, exchange, detail, audio
+    </sql>
+
+</mapper>

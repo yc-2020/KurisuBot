@@ -10,7 +10,7 @@ import org.springframework.util.StringUtils;
 import xyz.yuchao.kurisubot.config.BotConfig;
 import xyz.yuchao.kurisubot.config.KurisuBotConfig;
 import xyz.yuchao.kurisubot.enums.PostNoticeType;
-import xyz.yuchao.kurisubot.service.ApiService;
+import xyz.yuchao.kurisubot.service.api.ApiService;
 import xyz.yuchao.kurisubot.service.BaseAbstractService;
 import xyz.yuchao.kurisubot.service.notice.NoticeTypeObserverService;
 
@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 
 @Service
 //群消息撤回处理
-public class GroupRecallService extends BaseAbstractService implements NoticeTypeObserverService {
+public class GroupRecallServiceImpl extends BaseAbstractService implements NoticeTypeObserverService {
 
     @Resource
     private ApiService apiService;

@@ -1,6 +1,6 @@
 package xyz.yuchao.kurisubot.service.dict;
 
-import xyz.yuchao.kurisubot.entity.dict.EcDict;
+import xyz.yuchao.kurisubot.entity.dict.DictEc;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author yc
- * @since 2023-03-12
+ * @since 2023-03-13
  */
-public interface EcDictService extends IService<EcDict> {
+public interface DictEcService extends IService<DictEc> {
 
 }

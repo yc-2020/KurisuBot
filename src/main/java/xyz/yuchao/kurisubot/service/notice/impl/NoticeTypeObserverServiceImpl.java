@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 
 @Service
 //群消息撤回处理
-public class GroupRecallServiceImpl extends BaseAbstractService implements NoticeTypeObserverService {
+public class NoticeTypeObserverServiceImpl extends BaseAbstractService implements NoticeTypeObserverService {
 
     @Resource
     private ApiService apiService;

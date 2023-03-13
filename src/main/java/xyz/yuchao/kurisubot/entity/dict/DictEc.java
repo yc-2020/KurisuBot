@@ -11,10 +11,10 @@ import java.io.Serializable;
  * </p>
  *
  * @author yc
- * @since 2023-03-12
+ * @since 2023-03-13
  */
-@TableName("ecDict")
-public class EcDict implements Serializable {
+@TableName("dict_ec")
+public class DictEc implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -163,7 +163,7 @@ public class EcDict implements Serializable {
 
     @Override
     public String toString() {
-        return "EcDict{" +
+        return "DictEc{" +
             "word = " + word +
             ", phonetic = " + phonetic +
             ", definition = " + definition +

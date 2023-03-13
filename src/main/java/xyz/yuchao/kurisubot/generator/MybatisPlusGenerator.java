@@ -17,8 +17,8 @@ public class MybatisPlusGenerator {
     private static final String password = "12345678";
     private static final String outputPath = "D:\\code\\java\\kurisuBot\\src\\main\\java";
     private static final String xmlOutputPath = "D:\\code\\java\\kurisuBot\\src\\main\\resources\\mapper";
-    private static final String tables = "group_recall";
-    private static final String moduleName = ".group";
+    private static final String tables = "process_ec_study";
+    private static final String moduleName = ".process";
 
 
     public static void main(String[] args) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="xyz.yuchao.kurisubot.mapper.dict.EcDictMapper">
+<mapper namespace="xyz.yuchao.kurisubot.mapper.dict.DictEcMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="xyz.yuchao.kurisubot.entity.dict.EcDict">
+    <resultMap id="BaseResultMap" type="xyz.yuchao.kurisubot.entity.dict.DictEc">
         <id column="word" property="word" />
         <result column="phonetic" property="phonetic" />
         <result column="definition" property="definition" />

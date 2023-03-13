@@ -8,10 +8,18 @@ http:
     port: 10808
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.50.183:3306/Kurisu?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
-    username: root
-    password: 12345678
+    druid:
+      url: jdbc:mysql://192.168.50.183:3306/Kurisu?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&allowMultiQueries=true
+      username: root
+      password: 12345678
+      driver-class-name: com.mysql.jdbc.Driver
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+      stat-view-servlet:
+        login-username: root
+        login-password: 12345678
+        url-pattern: /druid/*
+        enabled: true
+
   jpa:
     show-sql: true
     hibernate:

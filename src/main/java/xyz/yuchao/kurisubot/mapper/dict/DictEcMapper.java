@@ -1,6 +1,6 @@
 package xyz.yuchao.kurisubot.mapper.dict;
 
-import xyz.yuchao.kurisubot.entity.dict.EcDict;
+import xyz.yuchao.kurisubot.entity.dict.DictEc;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -10,9 +10,9 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author yc
- * @since 2023-03-12
+ * @since 2023-03-13
  */
 @Mapper
-public interface EcDictMapper extends BaseMapper<EcDict> {
+public interface DictEcMapper extends BaseMapper<DictEc> {
 
 }
